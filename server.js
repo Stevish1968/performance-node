@@ -4,8 +4,7 @@ const {
     cpus
 } = require('os');
 const process = require('process');
-
-cluster.schedulingPolicy = cluster.SCHED_RR; // this has been added 
+console.log(cpus().length);
 
 const app = express();
 
